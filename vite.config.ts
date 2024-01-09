@@ -9,5 +9,9 @@ export default defineConfig({
       // remove before deployment
       minify: false,
    },
+   test: {
+      global: true,
+      environment: 'jsdom',
+   },
    plugins: [react(), tsconfigPaths()],
 });
